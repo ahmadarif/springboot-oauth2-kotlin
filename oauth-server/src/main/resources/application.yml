@@ -1,0 +1,19 @@
+server:
+  port: 10000
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/kotlin-oauth2
+    username: root
+
+  jackson:
+    serialization: true
+
+  jpa:
+    generate-ddl: true
+    show-sql: false
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
